@@ -41,156 +41,157 @@ function replaceText(v)
 	v = v.replace(/\b(M|m)ilennial(s)?\b/g, "$1illennial$2");
 	v = v.replace(/\b(M|m)ilenial(s)?\b/g, "$1illennial$2");
 
-	// Millennial Generation
-	v = v.replace(
-		/\b(?:Millennial Generation)|(?:Generation Millennial)\b/g,
-		"Plissken Faction"
-	);
-	v = v.replace(
-		/\b(?:millennial generation)|(?:generation millennial)\b/g,
-		"Plissken faction"
-	);
-
 	// Millennial
-	v = v.replace(/\bMillennial\b/g, "Snake Person");
-	v = v.replace(/\bmillennial\b/g, "snake person");
-	v = v.replace(/\bMillennials\b/g, "Snake People");
-	v = v.replace(/\bmillennials\b/g, "snake people");
-	v = v.replace(/\bMillennials'\b/g, "Snake People's");
-	v = v.replace(/\bmillennials'\b/g, "snake people's");
+	v = v.replace(/\bMillennial\b/g, "Usurper");
+	v = v.replace(/\bmillennial\b/g, "Usurper");
+	v = v.replace(/\bMillennials\b/g, "Usurpers");
+	v = v.replace(/\bmillennials\b/g, "usurpers");
+	v = v.replace(/\bMillennials'\b/g, "Usurpers'");
+	v = v.replace(/\bmillennials'\b/g, "usurpers'");
 
-	// The Great Recession
-	v = v.replace(/\bGreat Recession\b/g, "Time of Shedding and Cold Rocks");
-	v = v.replace(/\bgreat recession\b/g, "time of shedding and cold rocks");
+	// Barack Obama
+	v = v.replace(/\bObama\b/g, "the Archon");
+	v = v.replace(/\bBarack Obama\b/g, "the Archon");
+	v = v.replace(/\bPresident Obama\b/g, "the Archon");
+	v = v.replace(/\bThanks(,) Obama(!)\b/g, "Praise the Archon!");
 
-	// The Great Depression
-	v = v.replace(/\bGreat Depression\b/g, "Clutch Plague");
-	v = v.replace(/\bgreat depression\b/g, "clutch plague");
+	// Boomers
+	v = v.replace(/\bbaby boomers\b/g, "the patricians");
+	v = v.replace(/\bBoomers\b/g, "the Patricians");
+	v = v.replace(/\bthe boomer generation\b/g, "the patrician class");
 
-	// Occupy Wall Street
-	v = v.replace(
-		/\b(?:(?:Occupy|OWS) (?:M|m)ovement)|(?:Occupy Wall Street)\b/g,
-		"Great Ape-Snake War"
-	);
-	v = v.replace(
-		/\b(?:(?:occupy|OWS|ows) movement)|(?:occupy wall street)\b/g,
-		"great ape-snake war"
-	);
-	v = v.replace(/\bOWS\b/g, "GA-SW");
-	v = v.replace(/\bows\b/g, "ga-sw");
+	// Political Parties & Government
+	v = v.replace(/\bGOP\b/g, "The Black Cabal");
+	v = v.replace(/\bRepublicans\b/g, "Unclean Monks");
+	v = v.replace(/\bDemocrats\b/g, "Sluggards");
+	v = v.replace(/\bthe White House\b/g, "The Wicked Heath");
+	v = v.replace(/\bWhite House\b/g, "Wicked Heath");
+	v = v.replace(/\bSecretary of State\b/g, "Lord of War");
+	v = v.replace(/\bSupreme Court\b/g, "Justicar");
+	v = v.replace(/\bObamacare\b/g, "The Blood Tax");
+	v = v.replace(/\bthe Affordable Care Act\b/g, "The Blood Tax");
+	v = v.replace(/\bthe ACA\b/g, "The Blood Tax");
 
-	// Helicopter Parents
-	v = v.replace(/\bHelicopter Parents\b/g, "Thulsa Doom");
-	v = v.replace(/\bhelicopter parents\b/g, "Thoth-Amon");
-	v = v.replace(/\bHelicopter Parents'\b/g, "Thulsa Doom's");
-	v = v.replace(/\bhelicopter parents'\b/g, "Thoth-Amon's");
+	// Political Systems
+	v = v.replace(/\bcapitalism\b/g, "rapine");
 
-	// Trophy Kids
-	v = v.replace(/\bTrophy Kids\b/g, "Quetzalcoatl's Chosen");
-	v = v.replace(/\btrophy kids\b/g, "Quetzalcoatl's chosen");
-	v = v.replace(/\bTrophy Kids'\b/g, "Quetzalcoatl's Chosen's");
-	v = v.replace(/\btrophy kids'\b/g, "Quetzalcoatl's chosen's");
+	// Celebrities
+	v = v.replace(/\bKim Kardashian\b/g, "She Who Thirsts");
+	v = v.replace(/\bBeyoncé\b/g, "The Faerie Queene");
+	v = v.replace(/\bKe$ha\b/g, "Our Lady of Glittering Wisdom");
+	v = v.replace(/\bKesha\b/g, "Our Lady of Glittering Wisdom");
+	v = v.replace(/\bMiley Cyrus\b/g, "The Dark Lady");
+	v = v.replace(/\bTaylor Swift\b/g, "The Fair Lady");
+	v = v.replace(/\bChanning Tatum\b/g, "Lord Byron");
+	v = v.replace(/\bPope Francis\b/g, "The Hooded One");
+	v = v.replace(/\bPope\b/g, "The Hooded One");
+	v = v.replace(/\bGeorge RR Martin\b/g, "He who dines on sorrow");
+	v = v.replace(/\bGeorge R. R. Martin\b/g, "He who dines on sorrow");
+	v = v.replace(/\bGeorge R.R. Martin\b/g, "He who dines on sorrow");
+	v = v.replace(/\bBill Cosby\b/g, "Tom Rakewell");
+	v = v.replace(/\bLena Dunham\b/g, "The Eternal Child");
 
-	// Digital Natives
-	v = v.replace(/\bDigital Native(s)?\b/g, "Parseltongue$1");
-	v = v.replace(/\bdigital native(s)?\b/g, "parseltongue$1");
+	// Countries & World Leaders
+	v = v.replace(/\bAngele Merkel\b/g, "The Governess");
+	v = v.replace(/\bGreece\b/g, "the Southron Plague");
+	v = v.replace(/\bGermany\b/g, "Our Teutonic Masters");
+	v = v.replace(/\bIran\b/g, "Our Tentative Allies to the East");
+	v = v.replace(/\bUSA\b/g, "The Labyrinth");
+	v = v.replace(/\bUS\b/g, "The Labyrinth");
+	v = v.replace(/\bAmerica\b/g, "The Labyrinth");
+	v = v.replace(/\bThe United States\b/g, "The Labyrinth");
+	v = v.replace(/\bthe United States\b/g, "the Labyrinth");
+	v = v.replace(/\bAmerican\b/g, "Labyrinthine");
+	v = v.replace(/\bMexico\b/g, "New Azteca");
+	v = v.replace(/\bMexican\b/g, "New Aztecan");
+	v = v.replace(/\bLatinos\b/g, "Banditi");
+	v = v.replace(/\bHispanics\b/g, "Banditi");
+	v = v.replace(/\bLatinas\b/g, "Banditi");
+	v = v.replace(/\bLatin@s\b/g, "Banditi");
 
-	// Generation Y
-	v = v.replace(/\b(?:Generation Y)|(?:Generation Why)\b/g,
-		"Serpent Society");
-	v = v.replace(/\bgen(?:eration)? ?(?:wh)?y\b/g, "serpent society");
-	v = v.replace(/\bGen Y\b/g, "Society of the Serpent");
+	// Candidates
+	v = v.replace(/\bDonald Trump\b/g, "The Resplendent One");
+	v = v.replace(/\bHillary Clinton\b/g, "The Dowager, Lady Cuckold");
+	v = v.replace(/\bTed Cruz\b/g, "Mad Theodore");
 
-	// Generation We
-	v = v.replace(/\bGeneration We\b/g, "Caduceus Cult");
-	v = v.replace(/\bgeneration we\b/g, "caduceus cult");
-	v = v.replace(/\bWe Generation\b/g, "Cult of the Caduceus");
-	v = v.replace(/\bwe generation\b/g, "cult of the caduceus");
+	// Nerds
+	v = v.replace(/\bComic Con\b/g, "Vauxhall Pleasure Gardens");
+	v = v.replace(/\bSan Diego Comic Con\b/g, "Vauxhall Pleasure Gardens");
+	v = v.replace(/\bSDCC\b/g, "Vauxhall");
+	v = v.replace(/\bsapiosexual\b/g, "deviant");
+	v = v.replace(/\bGame of Thrones\b/g, "Illustrated Review of Phantasmagoria");
 
-	// Generation Me
-	v = v.replace(/\bGeneration Me\b/g, "The Cult of the Serpent");
-	v = v.replace(/\bgeneration me\b/g, "the cult of the serpent");
+	// Websites & Apps
+	v = v.replace(/\bBuzzfeed\b/g, "Smith’s Friendly Companion & Illustrated News");
+	v = v.replace(/\bHuffington Post\b/g, "The Shrill Crier’s Tatler");
+	v = v.replace(/\bHuffPo\b/g, "The Shrill Crier's Tatler");
+	v = v.replace(/\bFacebook\b/g, "The Black Market");
+	v = v.replace(/\bTwitter\b/g, "Hangman’s Square");
+	v = v.replace(/\bTinder\b/g, "the harlot’s mirror");
+	v = v.replace(/\bWall Street Journal\b/g, "The Englishwoman’s Domestic Magazine");
+	v = v.replace(/\bsocial media\b/g, "the penny dreadfuls");
 
-	// Global Generation
-	v = v.replace(/\bGlobal Generation\b/g, "Tannin's Horde");
-	v = v.replace(/\bglobal generation\b/g, "Tannin's horde");
-	v = v.replace(/\bGeneration Global\b/g, "Horde of Tannin");
-	v = v.replace(/\bgeneration global\b/g, "horde of Tannin");
+	// Hipsters
+	v = v.replace(/\bartisinal\b/g, "thrice-cursed");
+	v = v.replace(/\bhand crafted\b/g, "thrice-cursed");
+	v = v.replace(/\bhipster\b/g, "madman");
+	v = v.replace(/\biPhone\b/g, "iron valet");
+	v = v.replace(/\bapple watch\b/g, "Devil’s timepiece");
+	v = v.replace(/\bkale\b/g, "nightsoil");
+	v = v.replace(/\bjuice cleanse\b/g, "self-mortification");
+	v = v.replace(/\bfarmer’s market\b/g, "garden of unearthly delights");
+	v = v.replace(/\bgluten\b/g, "miscegenated oats");
+	v = v.replace(/\bgluten-free\b/g, "purified by fire");
+	v = v.replace(/\borganic\b/g, "virginal");
+	v = v.replace(/\bCeliac Disease\b/g, "The Curse of Manna");
 
-	// Generation Next
-	v = v.replace(/\bGeneration Next\b/g, "Time of Nidhogg");
-	v = v.replace(/\bgeneration next\b/g, "time of Nidhogg");
+	// Slang
+	v = v.replace(/\bbae\b/g, "departed beloved");
+	v = v.replace(/\bon fleek\b/g, "forgotten by those who walk in daylight");
+	v = v.replace(/\bfuckboy\b/g, "bravo");
+	v = v.replace(/\bratchet\b/g, "plebeian");
+	v = v.replace(/\bmetrosexual\b/g, "dandy");
+	v = v.replace(/\bfuck buddy\b/g, "slattern");
+	v = v.replace(/\bbromance\b/g, "buggery");
+	v = v.replace(/\bYOLO\b/g, "I Pledge My Life to Sin!");
+	v = v.replace(/\bFOMO\b/g, "Fear of Marching Ottomans");
+	v = v.replace(/\bom nom nom\b/g, "FEAST, YOU DOGS!");
+	v = v.replace(/\bnom nom nom\b/g, "FEAST, YOU DOGS!");
+	v = v.replace(/\bwalk of shame\b/g, "the libertine’s burden");
+	v = v.replace(/\bhook-up\b/g, "dalliance");
+	v = v.replace(/\bweed\b/g, "Layabout’s Leaf");
+	v = v.replace(/\bmarijuana\b/g, "Layabout’s Leaf");
+	v = v.replace(/\bpot\b/g, "Layabout’s Leaf");
+	v = v.replace(/\bcannibis\b/g, "Layabout’s Leaf");
 
-	// Net Generation
-	v = v.replace(/\bNet Generation\b/g, "Damballa's Coils");
-	v = v.replace(/\bnet generation\b/g, "Damballa's coils");
-	v = v.replace(/\bGeneration Net\b/g, "Coils of Damballa");
-	v = v.replace(/\bgeneration net\b/g, "Coils of Damballa");
+	// Tumblr
+	v = v.replace(/\bsocial justice warrior\b/g, "Lysistratians");
+	v = v.replace(/\bSJW\b/g, "Lysistratians");
+	v = v.replace(/\bfan-fiction\b/g, "slander");
+	v = v.replace(/\bfanfic\b/g, "slander");
+	v = v.replace(/\bfanfiction\b/g, "slander");
+	v = v.replace(/\btumblr\b/g, "sapphic palace of delights");
+	v = v.replace(/\bMRA\b/g, "Eunuch-Warrior");
+	v = v.replace(/\bMen's Rights Activist\b/g, "Eunuch-Warrior");
+	v = v.replace(/\bMen's Rights\b/g, "Eunuch-Warriors");
+	v = v.replace(/\bmen's rights\b/g, "eunuch-warriors");
+	v = v.replace(/\bmeninist\b/g, "eunuch-warrior");
 
-	// Echo Boomers
-	v = v.replace(/\bEcho Boomers\b/g, "Crotalids");
-	v = v.replace(/\becho Boomers\b/g, "crotalids");
-
-	// New Boomers
-	v = v.replace(/\bNew Boomers\b/g, "Jörmungandr's Circle");
-	v = v.replace(/\bnew Boomers\b/g, "Jörmungandr's circle");
-	v = v.replace(/\bNew Boomers'\b/g, "Jörmungandr's Circle's");
-	v = v.replace(/\bnew Boomers'\b/g, "Jörmungandr's circle's");
-
-	// Generation Flux
-	v = v.replace(/\b(?:Generation Flux)|(?:Flux Generation)\b/g, "Hiss Club");
-	v = v.replace(/\b(?:generation flux)|(?:flux generation)\b/g, "hiss club");
-
-	// Generation Sell
-	v = v.replace(/\bGeneration Sell\b/g, "Kaa Tribe");
-	v = v.replace(/\bgeneration sell\b/g, "Kaa tribe");
-	v = v.replace(/\bSell Generation\b/g, "Tribe of Kaa");
-	v = v.replace(/\bsell generation\b/g, "tribe of Kaa");
-
-	// Boomerang Generation
-	v = v.replace(
-		/\b(?:Boomerang Generation)|(?:Generation Boomerang)\b/g,
-		"Ouroboros Society"
-	);
-	v = v.replace(
-		/\b(?:boomerang generation)|(?:generation boomerang)\b/g,
-		"ouroboros society"
-	);
-
-	// Peter Pan Generation
-	v = v.replace(/\bPeter Pan Generation\b/g, "Neheb-Kau Cult");
-	v = v.replace(/\b(?:P|p)eter (?:P|p)an generation\b/g, "Neheb-Kau cult");
-	v = v.replace(/\bGeneration Peter Pan\b/g, "Cult of Neheb-Kau");
-	v = v.replace(/\bgeneration (?:P|p)eter (?:P|p)an\b/g, "cult of Neheb-Kau");
-
-	// Generation 911
-	v = v.replace(/\bGen(?:eration)? 9\/?11\b/g, "Kaa Tribe");
-	v = v.replace(/\bgen(?:eration)? 9\/?11\b/g, "Kaa tribe");
-	v = v.replace(/\b9\/?11 Generation\b/g, "Tribe of the Kaa");
-	v = v.replace(/\b9\/?11 generation\b/g, "tribe of the Kaa");
-
-	// The Generation of €700
-	v = v.replace(
-		/\b(?:The Generation of €700)|(?:€700 Generation)\b/g,
-		"Ophion"
-	);
-	v = v.replace(
-		/\b(?:the generation of €700)|(?:€700 generation)\b/g,
-		"ophion"
-	);
-
-	// Mileurista
-	v = v.replace(/\b(?:M|m)ill?eurista\b/g, "Nagual");
-
-	// Precarious Generation
-	v = v.replace(
-		/\b(?:Precarious Generation)|(?:Generation Precarious)\b/g,
-		"Gargouille"
-	);
-	v = v.replace(
-		/\b(?:precarious generation)|(?:generation precarious)\b/g,
-		"gargouille"
-	);
+	// Assorted
+	v = v.replace(/\bcrime\b/g, "sin");
+	v = v.replace(/\bcriminal\b/g, "sinner");
+	v = v.replace(/\brehab\b/g, "golden tower");
+	v = v.replace(/\brager\b/g, "masquerade");
+	v = v.replace(/\brave\b/g, "masque");
+	v = v.replace(/\bDJ\b/g, "Mad Piper");
+	v = v.replace(/\bironic\b/g, "obscene");
+	v = v.replace(/\bblowjob\b/g, "Maw of Madness");
+	v = v.replace(/\bstunt double\b/g, "pain twin");
+	v = v.replace(/\bmom\b/g, "cursèd breeder");
+	v = v.replace(/\bmoms\b/g, "cursèd breeders");
+	v = v.replace(/\bminions\b/g, "mongrels");
+	v = v.replace(/\bCatholic\b/g, "Papist");
+	v = v.replace(/\bCorgy\b/g, "Fel-Beast");
 
 	return v;
 }
