@@ -35,11 +35,6 @@ function handleText(textNode) {
 
 function replaceText(v)
 {
-	// Fix some misspellings
-	v = v.replace(/\b(M|m)illienial(s)?\b/g, "$1illennial$2");
-	v = v.replace(/\b(M|m)illenial(s)?\b/g, "$1illennial$2");
-	v = v.replace(/\b(M|m)ilennial(s)?\b/g, "$1illennial$2");
-	v = v.replace(/\b(M|m)ilenial(s)?\b/g, "$1illennial$2");
 
 	// Millennial
 	v = v.replace(/\bMillennial\b/g, "Usurper");
