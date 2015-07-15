@@ -45,10 +45,8 @@ function replaceText(v)
 	v = v.replace(/\bmillennials'\b/g, "usurpers'");
 
 	// Barack Obama
-	v = v.replace(/\bObama\b/g, "the Archon");
-	v = v.replace(/\bBarack Obama\b/g, "the Archon");
-	v = v.replace(/\bPresident Obama\b/g, "the Archon");
-	v = v.replace(/\bThanks(,) Obama(!)\b/g, "Praise the Archon!");
+	v = v.replace(/\b(?:(?:President Barack Obama)|(?:Barack Obama)|(?:President Obama)|(?:Obama))\b/g, "the Archon");
+	v = v.replace(/\b(?:T|t)hanks(,) Obama\b/g, "Praise the Archon!");
 
 	// Boomers
 	v = v.replace(/\bbaby boomers\b/g, "the patricians");
